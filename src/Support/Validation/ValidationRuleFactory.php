@@ -37,7 +37,7 @@ final class ValidationRuleFactory
             }
 
             if (self::isUtility($rule)) {
-                if ($rule === 'nullable') {
+                if ($rule === 'nullable' || $rule === 'sometimes') {
                     $nullable = true;
                 }
 
